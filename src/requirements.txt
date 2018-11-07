@@ -1,0 +1,11 @@
+gym==0.10.5
+matplotlib==2.1.2
+pyglet==1.2.4
+box2d
+matplotlib
+pyvirtualdisplay
+pyglet==1.2.4
+import gym
+torch
+numpy
+unityagents

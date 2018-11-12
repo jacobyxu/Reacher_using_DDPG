@@ -164,6 +164,7 @@ class OUNoise:
         self.theta = theta
         self.sigma = sigma
         self.seed = random.seed(seed)
+        self.np_seed = np.random.seed(seed)
         self.reset()
 
     def reset(self):

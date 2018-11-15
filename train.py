@@ -9,6 +9,13 @@ def MSG(txt):
 from ddpg_agent import Agent
 
 def ddpg(env, agent, n_agent, n_episodes=150, max_t=1000, print_every=100):
+    """
+    Params
+    ======
+        n_episodes (int): maximum number of training episodes
+        max_t (int): maximum number of timesteps per episode
+        print_every (int): number of episodes to print result
+    """
     MSG('start!')
     brain_name = env.brain_names[0]
     scores_deque = deque(maxlen=print_every)

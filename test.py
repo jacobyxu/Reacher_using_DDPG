@@ -30,7 +30,7 @@ def main():
     env_info = env.reset(train_mode=False)[brain_name]
     state = env_info.vector_observations
     for t in range(1000):
-        action = [agent.act(state[agent_x], agent_x) for agent_x in range(n_agent)]
+        action = [agent.act(state[agent_x], agent_x, add_noise=False) for agent_x in range(n_agent)]
         env_info = env.step(action)[brain_name]
         next_state = env_info.vector_observations
         reward = env_info.rewards
